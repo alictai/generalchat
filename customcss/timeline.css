@@ -1,3 +1,11 @@
+img {
+    width: 100%;
+}
+
+.text-muted {
+    color:#E3EBEB;
+}
+
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
