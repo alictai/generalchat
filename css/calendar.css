@@ -1,0 +1,38 @@
+
+#mini-clndr {
+
+    margin: 0px;
+    position: absolute;
+    top: 0;
+}
+
+#mini-clndr .clndr .days-container {
+
+    height:196px;
+}
+
+#mini-clndr .clndr .days-container .days {
+    height: 205px;
+}
+
+#mini-clndr .clndr .days-container .events {
+    height: 203px;
+}
+
+.event-item{
+    border-bottom:1px solid gray;
+    padding: 5px 0px;
+}
+.event-item-time, .event-item-location{
+    color: #938f8f;
+    box-shadow: none;
+    text-shadow: none;
+font-weight: normal;
+}
+
+.event-item-name{
+font-weight: bold;
+    color:black;
+    box-shadow: none;
+    text-shadow: none;
+}
