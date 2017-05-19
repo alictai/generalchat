@@ -6,6 +6,13 @@ img {
     color:#E3EBEB;
 }
 
+
+.sort-icon{
+    font-size:30px;
+    color:#cccccc;
+    cursor: pointer;
+}
+
 .timeline {
     list-style: none;
     padding: 20px 0 20px;

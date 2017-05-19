@@ -30,13 +30,26 @@
     <!-- Design borrowed from codepen: http://codepen.io/bsngr/pen/Ifvbi -->
 </head>
 <body>
+    <div class="masthead clearfix">
+        <div class="inner">
+            <nav>
+                <ul class="nav masthead-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="timeline.html">History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <div class="container">
         <div class="page-header">
             <h1 id="timeline">History of Gen.Chat</h1>
         </div>
-        <ul class="timeline">
-            <li>
+        
+        <span id="SortTimeline" class="sort-icon glyphicon glyphicon-chevron-down"></span>
+        <ul id="History-timeline" class="timeline">
+            
+            <li id="EmilyWorkRants">
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -45,14 +58,14 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            In an attempt to clean up an excessive number of group chats, <span id="alitai">Ali Tai</span> created a chat called "Daily Rants with Emily" and proceeded to add every one in their other group chats into this one. Little did these unsuspecting folks know that they had just created the beginning of an era. 
+                            In an attempt to clean up an excessive number of group chats, Ali created a chat called "Daily Rants with Emily" and proceeded to add every one in their other group chats into this one. Little did these unsuspecting folks know that they had just created the beginning of an era. 
                         </p><p>
                             <img src="img/genchatbirth.PNG"/>
                         </p>
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="OGGenChat" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -64,7 +77,7 @@
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="AllisonAbandons" class="timeline-inverted">
                 <div class="timeline-badge danger"><i class="glyphicon glyphicon-minus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -76,7 +89,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li id="FirstSlideDeck">
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -88,7 +101,7 @@
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="AllisonReturns" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -100,7 +113,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li id="ZeldaAndCrafts">
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -115,7 +128,7 @@
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="Christian" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -125,7 +138,7 @@
                     <img src="img/welcomechristian.PNG"/>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="Connor" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -134,7 +147,20 @@
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="BattleofBelltown">
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">The Battle of Belltown 1781 (+/- 236 years)</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; March 30th, 2017</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>The Battle of Belltown was the first battle of the Escape the Room War, a struggle between the women and men affiliated with General Chat for control of payment for an upcoming plate of nachos. The battle, which was a tenuous victory for the men, ended in a near tie and resulted in the nachos never being delivered.</p>
+                        <p><img src="img/puzzbreak.jpg"/></p>
+                    </div>
+                </div>
+            </li>
+            <li id="Jacob" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -144,7 +170,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li id="Caracals" >
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -162,7 +188,7 @@
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="Taylor" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -175,7 +201,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li id="PeppeCEO">
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -187,7 +213,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li id="ChurchofGeneralChatLLC">
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -196,7 +222,7 @@
                     </div>
                     <div class="timeline-body">
                         <p>
-                            <span id="allisb">Allison</span> was kind and reminded everyone to do their taxes - and then jokingly recommended that General Chat become a religion with tax-free status. Thus the religion of Peppe, our lordly orange bird, came to be born. Soon after, <span id="josh">Josh</span> and <span id="christian">Christian</span> were dubbed the first members of the church choir. Nachos were determined to be required for our most sacred and meaningful traditions, and therefore inappropriate to tax. Mimosa named our holy drink, which is only appropriate to consume after one's baptism with tequila.  
+                            Allison was kind and reminded everyone to do their taxes - and then jokingly recommended that General Chat become a religion with tax-free status. Thus the religion of Peppe, our lordly orange bird, came to be born. Soon after, Josh and Christian were dubbed the first members of the church choir. Nachos were determined to be required for our most sacred and meaningful traditions, and therefore inappropriate to tax. Mimosa named our holy drink, which is only appropriate to consume after one's baptism with tequila.  
                         </p>
                         <p><i>
                             Our taco in Cabo, hollowed be thy shell.<br/>
@@ -209,22 +235,39 @@
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="GenChatSite" >
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Gen.Chat is Born</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 18th, 2017</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Despite Tara's warning that ".chat" websites are "def porn sites", we forged ahead and Noah purchased the now infamous domain: <a href="http://gen.chat">http://gen.chat</a>. Plans were made for Shelby to create logo/iconography, Noah to help with vector art, Ryan to copy edit, Ali to design, and Emily to web dev. Feature requests immediately began rolling in and, out of impatience, Ali created the initial bootstrapped landing page that said nothing but "DO EVERYTHING FOR THE NACHOS."
+                        </p>
+                        <p><img src="img/genchatpurchase.jpg"/></p>
+                        <p>Disclaimer:</p>
+                        <p><img src="img/notporn.jpg"/></p>
+                    </div>
+                </div>
+            </li>
+            <li id="Jonah" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">Jonah's Gen.Chat Induction</h4>
                         <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 27th, 2017</small></p>
-                        <img src="img/welcomejonah.png"/>
+                        <img src="img/welcomejonah.PNG"/>
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="JoshExiled" class="timeline-inverted">
                 <div class="timeline-badge danger"><i class="glyphicon glyphicon-minus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">Josh Exiled from General Chat</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 18th, 2017</small></p>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 28th, 2017</small></p>
                     </div>
                     <div class="timeline-body">
                         <p>
@@ -233,38 +276,39 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li id="VetoSchism" >
                 <div class="timeline-badge danger"><i class="glyphicon glyphicon-minus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">The Great Veto Schism of 2017</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 18th, 2017</small></p>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 28th, 2017</small></p>
                     </div>
                     <div class="timeline-body">
-                        <p>A simple veto brings into questions all that which members of General Chat believed in as it pertained to friend group security, and how far we should enable each other to go.</p>
-                        <img src="img/schism1.png" />
+                        <p>A simple veto brings into question all that members of General Chat believe about friend group security and how far we should enable each other to go for a joke.</p>
+                        <img src="img/schism1.PNG" />
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="JoshReturns" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">The Sacrifice</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 18th, 2017</small></p>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; April 28th, 2017</small></p>
                     </div>
                     <div class="timeline-body">
                         <p>Ali sacrifices her veto for Josh to bring him back into the fold.</p>
+                        <img src="img/schism2.PNG" />
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <li id="Zurka" class="timeline-inverted">
                 <div class="timeline-badge success"><i class="glyphicon glyphicon-plus"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">Zurka's Gen.Chat Induction</h4>
                         <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp; May 13th, 2017</small></p>
-                        <img src="img/welcomezurka.png" />
+                        <img src="img/welcomezurka.PNG" />
                     </div>
                 </div>
             </li>
@@ -273,3 +317,24 @@
 
 </body>
 </html>
+
+<script>
+
+
+$("#SortTimeline").click(function (e){
+
+    ul = $('#History-timeline'); // your parent ul element
+
+    ul.children().each(function(i,li){ul.prepend(li)});
+    if ($(this).hasClass("glyphicon-chevron-down")){
+        $(this).removeClass("glyphicon-chevron-down");
+        $(this).addClass("glyphicon-chevron-up");
+    }
+    else{
+        $(this).addClass("glyphicon-chevron-down");
+        $(this).removeClass("glyphicon-chevron-up");
+    }
+});
+
+</script>
+
