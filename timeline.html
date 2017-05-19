@@ -43,7 +43,10 @@
         <div class="page-header">
             <h1 id="timeline">History of Gen.Chat</h1>
         </div>
-        <ul class="timeline">
+        
+        <span id="SortTimeline" class="sort-icon glyphicon glyphicon-chevron-down"></span>
+        <ul id="History-timeline" class="timeline">
+            
             <li id="EmilyWorkRants">
                 <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                 <div class="timeline-panel">
@@ -312,3 +315,24 @@
 
 </body>
 </html>
+
+<script>
+
+
+$("#SortTimeline").click(function (e){
+
+    ul = $('#History-timeline'); // your parent ul element
+
+    ul.children().each(function(i,li){ul.prepend(li)});
+    if ($(this).hasClass("glyphicon-chevron-down")){
+        $(this).removeClass("glyphicon-chevron-down");
+        $(this).addClass("glyphicon-chevron-up");
+    }
+    else{
+        $(this).addClass("glyphicon-chevron-down");
+        $(this).removeClass("glyphicon-chevron-up");
+    }
+});
+
+</script>
+
