@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Going too far for a joke">
+    <meta name="author" content="General Chat LLC">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>General Chat History</title>
+
+    <!-- Bootstrap Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+    <link href="customcss/timeline.css" rel="stylesheet" />
+
+    <!-- Design borrowed from codepen: http://codepen.io/bsngr/pen/Ifvbi -->
+</head>
+<body>
+    <div class="masthead clearfix">
+        <div class="inner">
+            <nav>
+                <ul class="nav masthead-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="timeline.html">History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container"><img src="img/inthishouse.png" alt="Humorous in-this-house graphic about general chat inside jokes">
+    </div>
+
+</body>
+</html>
+
+<script>
+
+
+$("#SortTimeline").click(function (e){
+
+    ul = $('#History-timeline'); // your parent ul element
+
+    ul.children().each(function(i,li){ul.prepend(li)});
+    if ($(this).hasClass("glyphicon-chevron-down")){
+        $(this).removeClass("glyphicon-chevron-down");
+        $(this).addClass("glyphicon-chevron-up");
+    }
+    else{
+        $(this).addClass("glyphicon-chevron-down");
+        $(this).removeClass("glyphicon-chevron-up");
+    }
+});
+
+</script>
